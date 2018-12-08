@@ -10,7 +10,7 @@ case class Property(key: String, value: String) {
 object Property {
   def stroke(color: String) = Property("stroke", color)
 
-  def strokeWith(width: Int) = Property("stroke-with", width.toString)
+  def strokeWidth(width: Int) = Property("stroke-width", width.toString)
 
   def fill(color: String) = Property("fill", color)
 

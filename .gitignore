@@ -49,4 +49,4 @@ fabric.properties
 target
 classes
 .idea
-
+.attach_*

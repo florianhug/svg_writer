@@ -5,47 +5,45 @@ import ch.hugdata.svgwriter.dimension.LengthUnit._
 trait LengthConversion extends Any {
   protected def lengthIn(unit: LengthUnit): Length
 
-  def em = lengthIn(EM)
+  def em: Length = lengthIn(EM)
 
-  def ex = lengthIn(EX)
+  def ex: Length = lengthIn(EX)
 
-  def px = lengthIn(PX)
+  def px: Length = lengthIn(PX)
 
-  def pixel = px
+  def pixel: Length = px
 
-  def pixels = px
+  def pixels: Length = px
 
-  def in = lengthIn(IN)
+  def in: Length = lengthIn(IN)
 
-  def inch = in
+  def inch: Length = in
 
-  def inches = in
+  def inches: Length = in
 
-  def cm = lengthIn(CM)
+  def cm: Length = lengthIn(CM)
 
-  def centimeter = cm
+  def centimeter: Length = cm
 
-  def centimeters = cm
+  def centimeters: Length = cm
 
-  def mm = lengthIn(MM)
+  def mm: Length = lengthIn(MM)
 
-  def millimeter = mm
+  def millimeter: Length = mm
 
-  def millimeters = mm
+  def millimeters: Length = mm
 
-  def pt = lengthIn(PT)
+  def pt: Length = lengthIn(PT)
 
-  def point = pt
+  def point: Length = pt
 
-  def points = pt
+  def points: Length = pt
 
-  def pc = lengthIn(PC)
+  def pc: Length = lengthIn(PC)
 
-  def pica = pc
+  def pica: Length = pc
 
-  def picas = pc
+  def picas: Length = pc
 
-  def percent = lengthIn(PERCENT)
-
-  def % = percent
+  def percent: Length = lengthIn(PERCENT)
 }

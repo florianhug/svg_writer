@@ -1,6 +1,5 @@
-package ch.hugdata.svgwriter
+package ch.hugdata.svgwriter.dimension
 
-import ch.hugdata.svgwriter.dimension._
 import org.scalatest.FlatSpec
 
 import scala.language.postfixOps
@@ -74,10 +73,10 @@ class LengthSpec extends FlatSpec {
     assert(length2.unit == LengthUnit.MM)
   }
 
-  it should "be able to use percent as unit" in {
-    val length: Length = 12 percent;
-    assert(length.value === 12.0)
-    assert(length.unit == LengthUnit.PERCENT)
+  it should "be converted to SVG" in {
+    val length: Length = 42 pixel
+    val lengthString = length.toSvg
+    assert(lengthString === """42.0px""")
   }
 
 }

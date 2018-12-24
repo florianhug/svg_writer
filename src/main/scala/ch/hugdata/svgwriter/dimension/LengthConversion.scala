@@ -45,5 +45,6 @@ trait LengthConversion extends Any {
 
   def picas: Length = pc
 
-  def percent: Length = lengthIn(PERCENT)
+  //TODO: Implement percent values : https://developer.mozilla.org/en-US/docs/Web/SVG/Content_type#Length
+
 }
